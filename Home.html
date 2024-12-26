@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" href="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/470139025_931532402405394_586244153884490535_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF4QC-VrwvISo9npnGYNANY8M_RxcL5zRHwz9HFwvnNEUderL_6nhhxGZA7aZYwqYFJNotoffI1ioMLL5hXUFiP&_nc_ohc=7Jg6uzzYekwQ7kNvgHMrB4V&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=A7B5IanxWsei_XxZzGQ1xlD&oh=00_AYAdo01pbBnsIoXnvDdf2Rc66GjoeDWdSD-ls-NBgujRNw&oe=677299FA">
+<style>
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #343a40;
+}
+.nav-link {
+    color: #ffffff; 
+}
+.nav-link:hover {
+    color: #ffdd57; 
+}
+.btn-login, .btn-register {
+    background-color: #28a745;
+    color: white;
+    border: none; 
+}
+.btn-login:hover, .btn-register:hover {
+    background-color: #218838; 
+}
+.dropdown-menu {
+    background-color: #f8f9fa; 
+}
+.dropdown-item:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+.footer {
+    background-color: #800000;
+    color: #fff;
+    padding: 10px 0;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #800000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+.news-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.news-item {
+    margin-bottom: 20px;
+}
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+.news-item .news-content {
+    background-color: #cccecf;
+    padding: 10px;
+}
+.news-item .news-content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.news-item .news-content .news-date {
+    font-size: 0.9rem;
+}
+.view-more {
+    text-align: right;
+    margin-top: 20px;
+}
+.view-more a {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #6b0909;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.position-relative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+</style>
+</head>
+<div class="bgcl">
+    <nav class="navbar navbar-expand-lg navbar-light" id="no1">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/470139025_931532402405394_586244153884490535_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF4QC-VrwvISo9npnGYNANY8M_RxcL5zRHwz9HFwvnNEUderL_6nhhxGZA7aZYwqYFJNotoffI1ioMLL5hXUFiP&_nc_ohc=7Jg6uzzYekwQ7kNvgHMrB4V&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=A7B5IanxWsei_XxZzGQ1xlD&oh=00_AYAdo01pbBnsIoXnvDdf2Rc66GjoeDWdSD-ls-NBgujRNw&oe=677299FA" alt="Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active  text-white" href="Home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-white" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dịch Vụ</a>
+                        <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="Datlich.html">Đặt Lịch</a></li>
+                            <li><a class="dropdown-item" href="TimHieu.html">Tìm Hiểu</a></li>
+                            <li><a class="dropdown-item" href="Chothue.html">Cho Thuê Du Thuyền</a></li>
+                            <li><a class="dropdown-item" href="TinTucSk.html">Tin Tức Và Sự Kiện</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link   text-white" href="LienHe.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link   text-white" href="VeCHungToi.html">Về Chúng Tôi</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="dnhap.html" class="btn btn-login me-4">Đăng nhập</a>
+                    <a href="dky.html" class="btn btn-register d-block px-4">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<main>
+    <section class="text-center py-1">
+        <video width="100%" height="400" controls>
+            <source src="https://cdn.pixabay.com/video/2022/06/06/119436-717695346_large.mp4" type="video/mp4">
+            <source src="https://cdn.pixabay.com/video/2022/06/06/119436-717695346_large.mp4" type="video/ogg">
+        </video>
+    </section>
+
+    <section class="bg-white text-center py-1">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mt-3">HOME</h1>
+            <h2 class="text-2xl font-bold mt-4">NHÀ PHÂN PHỐI CHÍNH HÃNG TẠI VIỆT NAM</h2>
+            <h3 class="text-xl font-bold mt-2">TẬP ĐOÀN DU THUYỀN NPD YACHTS</h3>
+            <p class="text-gray-700 mt-4">
+                NPD YACHTS VIETNAM được các nhà sản xuất hàng đầu thế giới ủy quyền phân phối chính thức tại Việt Nam các sản phẩm du thuyền sang trọng từ 30 - 100 feet. 
+                Với đội ngũ nhân viên chuyên nghiệp và dịch vụ hậu mãi chu đáo, chúng tôi cam kết mang đến cho khách hàng những trải nghiệm tuyệt vời nhất.
+            </p>
+        </div>
+    </section>
+
+    <section class="position-relative">
+        <img alt="image" class="img-fluid" src="https://azimutyachtsvietnam.com/wp-content/uploads/2021/02/Anh-1-2.jpg" width="1000" height="700">
+    </section>
+</main>
+</head>
+<body>
+    <div class="container">
+     <div class="row">
+      <div class="col-12 text-center">
+           <h1 class="font-weight-bold mb-4">TIN TỨC</h1>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-md-4 news-item">
+       <img alt="image" height="400" src="https://storage.googleapis.com/a1aa/image/8u9ZpEL8j5aaEdeLBC1JnX9ghEQrgwCzuNumE24psRe5TF4TA.jpg" width="600"/>
+       <div class="news-content">
+        <h5>
+         DU THUYỀN NPD YACHTS 53 SẮP ĐƯỢC CHÍNH THỨC RA MẮT
+        </h5>
+        <p class="news-date">
+         <i class="fas fa-calendar-alt"></i>18.05.24</p></div>
+      </div>
+      <div class="col-md-4 news-item">
+       <img alt="image" height="400" src="https://storage.googleapis.com/a1aa/image/PU9ZxebqXhxrGitjgG4gtI761fv0Oe02P8fQ5Kll1xqtPVgPB.jpg" width="600"/>
+       <div class="news-content">
+        <h5>YACHTS 60 FLYBRIDGE - SIÊU PHẨM DU THUYỀN MANG PHONG VỊ BIỂN XANH</h5>
+        <p class="news-date">
+         <i class="fas fa-calendar-alt"></i>10.06.24</p></div>
+      </div>
+      <div class="col-md-4 news-item">
+       <img alt="image" height="400" src="https://storage.googleapis.com/a1aa/image/IsiGQjS2fOScGCLI4tz3spXMh04tcNWY14IFriFMlsEAqC8JA.jpg" width="600"/>
+       <div class="news-content">
+        <h5>NPD YACHTS ĐẠT DOANH SỐ ẤN TƯỢNG TẠI CHÂU Á THÁI BÌNH DƯƠNG</h5>
+        <p class="news-date"><i class="fas fa-calendar-alt"></i>18.05.24</p>
+       </div>
+      </div>
+      <div class="col-md-4 news-item">
+       <img alt="image" height="400" src="https://storage.googleapis.com/a1aa/image/8u9ZpEL8j5aaEdeLBC1JnX9ghEQrgwCzuNumE24psRe5TF4TA.jpg" width="600"/>
+       <div class="news-content">
+        <h5>TẬP ĐOÀN NPD YACHTS BỔ NHIỆM CEO MỚI TỪ THÁNG 9.2025</h5>
+        <p class="news-date"><i class="fas fa-calendar-alt"></i>11.06.24</p>
+       </div>
+      </div>
+      <div class="col-md-4 news-item">
+       <img alt="image" height="400" src="https://storage.googleapis.com/a1aa/image/8u9ZpEL8j5aaEdeLBC1JnX9ghEQrgwCzuNumE24psRe5TF4TA.jpg" width="600"/>
+       <div class="news-content">
+        <h5>NPD YACHTS S10 - KHI THỂ THAO &amp; QUYỀN LỰC HỢP LÀM MỘT</h5>
+        <p class="news-date"><i class="fas fa-calendar-alt"></i>23.04.24</p>
+       </div>
+      </div>
+      <div class="col-md-4 news-item">
+       <img alt="image" height="400" src="https://storage.googleapis.com/a1aa/image/FfIZjSRiqgRVXaJbtLb0vgPn9t2qchaSrvoZc3ENeBzenKwnA.jpg" width="600"/>
+       <div class="news-content">
+        <h5>MAGELLANO 25 METRI - TÁC PHẨM NGHỆ THUẬT TỪ NPD YACHTS</h5>
+        <p class="news-date"><i class="fas fa-calendar-alt"></i>23.04.24</p>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-12 view-more">
+       <a href="TinTucSk.html">Xem Thêm<i class="fas fa-chevron-right">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </body>
+  <body>
+   <div class="container">
+    <div class="row py-5">
+     <div class="col-md-6">
+      <h5>Văn phòng</h5>
+      <p> Khối 3, Phường Trung Đô, Thành Phố Vinh, Nghệ An</p>
+      <h5>Showroom</h5>
+      <p>Trường Đại Học Vinh, Đường Lê Duẩn, Phường Trường Thi, Thành Phố Vinh, Nghệ An</p>
+      <p>Tel: (+84) 0123.456.789<br/>Email:  npdyachts@gmail.com</p>
+      <section class="position-relative">
+          <img alt="Ggmap" class="img-fluid" src="https://www.bing.com/maps/geoplat/REST/v1/Imagery/Map/RoadVibrant/18.670831,105.677334/14?ms=648,345&heid=7865192933866078209,707070&fpp=18.670830726623535,105.67733383178711;178&ml=Basemap,LandCover,Landmarks,OsmBuildings&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=en-US&fmt=jpeg&od=1&shading=hill&logo=n&da=ro">
+      </section>
+     </div>
+     <div class="col-md-6">
+      <h5>Đăng Ký Email nhận bản tin</h5>
+      <p>Đăng ký để trở thành người đầu tiên nhận các thông tin hấp dẫn về du thuyền, triển lãm và các buổi tiệc VIP.</p>
+      <form>
+       <div class="input-group mb-3">
+        <input aria-label="Nhập Email của bạn" class="form-control" placeholder="Nhập Email của bạn" type="email"/>
+        <button class="btn btn-dark" type="submit">Đăng ký</button>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+   <div class="footer">
+    <div class="container">
+     <div class="row py-3">
+      <div class="col-md-6">
+       <p>Theo dõi chúng tôi trên mạng xã hội</p>
+       <div class="social-icons">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+       </div>
+      </div>
+      <div class="col-md-6 text-end">
+       <p>Bản Quyền Thuộc về NPD Yachts Vietnam.</p>
+       <a href="#">Trang Chủ</a>
+       <a href="#">Về Chúng tôi</a>
+       <a href="#">Liên hệ</a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <a class="back-to-top" href="#"><i class="fas fa-chevron-up">
+    </i>
+   </a>
+  </body>
+  </html>
+  

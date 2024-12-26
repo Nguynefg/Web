@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>LienHe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" href="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/470139025_931532402405394_586244153884490535_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF4QC-VrwvISo9npnGYNANY8M_RxcL5zRHwz9HFwvnNEUderL_6nhhxGZA7aZYwqYFJNotoffI1ioMLL5hXUFiP&_nc_ohc=7Jg6uzzYekwQ7kNvgHMrB4V&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=A7B5IanxWsei_XxZzGQ1xlD&oh=00_AYAdo01pbBnsIoXnvDdf2Rc66GjoeDWdSD-ls-NBgujRNw&oe=677299FA">
+<style>
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #343a40;
+}
+.nav-link {
+    color: #ffffff; 
+}
+.nav-link:hover {
+    color: #ffdd57; 
+}
+.btn-login, .btn-register {
+    background-color: #28a745;
+    color: white;
+    border: none; 
+}
+.btn-login:hover, .btn-register:hover {
+    background-color: #218838; 
+}
+.dropdown-menu {
+    background-color: #f8f9fa; 
+}
+.dropdown-item:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+.footer {
+    background-color: #800000;
+    color: #fff;
+    padding: 10px 0;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #800000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+.news-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.news-item {
+    margin-bottom: 20px;
+}
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+.news-item .news-content {
+    background-color: #cccecf;
+    padding: 10px;
+}
+.news-item .news-content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.news-item .news-content .news-date {
+    font-size: 0.9rem;
+}
+.view-more {
+    text-align: right;
+    margin-top: 20px;
+}
+.view-more a {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #6b0909;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.position-relative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+</style>
+</head>
+<div class="bgcl">
+    <nav class="navbar navbar-expand-lg navbar-light" id="no1">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/470139025_931532402405394_586244153884490535_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF4QC-VrwvISo9npnGYNANY8M_RxcL5zRHwz9HFwvnNEUderL_6nhhxGZA7aZYwqYFJNotoffI1ioMLL5hXUFiP&_nc_ohc=7Jg6uzzYekwQ7kNvgHMrB4V&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=A7B5IanxWsei_XxZzGQ1xlD&oh=00_AYAdo01pbBnsIoXnvDdf2Rc66GjoeDWdSD-ls-NBgujRNw&oe=677299FA" alt="Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active  text-white" href="Home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-white" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dịch Vụ</a>
+                        <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="Datlich.html">Đặt Lịch</a></li>
+                            <li><a class="dropdown-item" href="TimHieu.html">Tìm Hiểu</a></li>
+                            <li><a class="dropdown-item" href="Chothue.html">Cho Thuê Du Thuyền</a></li>
+                            <li><a class="dropdown-item" href="TinTucSk.html">Tin Tức Và Sự Kiện</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link   text-white" href="LienHe.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link   text-white" href="VeCHungToi.html">Về Chúng Tôi</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="dnhap.html" class="btn btn-login me-4">Đăng nhập</a>
+                    <a href="dky.html" class="btn btn-register d-block px-4">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+<section class="position-relative">
+    <img alt="image" class="img-fluid" src="https://4kwallpapers.com/images/walls/thumbs_3t/17752.jpg" width="1000" height="700">
+</section>
+    </section>
+    <div class="container my-4">
+        <div class="text-sm text-gray-600 mb-4">
+            <a class="hover:underline" href="Home.html">Home</a> / <span>Liên hệ</span>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="h4 font-weight-bold mb-4">LIÊN HỆ</h2>
+                <p class="mb-2"><strong>TRỤ SỞ CHÍNH</strong><br/>Trường Đại học Vinh<br/>Đường Lê Duẩn, Phường Trường Thi, Thành Phố Vinh, Nghệ An</p>
+                <p class="mb-2"><strong>TRỤ SỞ XƯỞNG ĐÓNG TÀU</strong><br/>Khối 3, Phường Trung Đô, Thành Phố Vinh, Nghệ An</p>
+                <p class="mb-2"><strong>HỆ THỐNG BẾN LƯU THUYỀN</strong><br/>Bến Du Thuyền Vinh NPD YACHTS<br/>Đường Ven hồ, phường Trung Đô, Thành Phố V inh, Nghệ An</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center mb-4">
+                    <i class="fas fa-phone-alt text-2xl text-blue-500 mr-2"></i>
+                    <div>
+                        <div class="font-weight-bold">HOTLINE</div>
+                        <div>(+84) 0123.456.789</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-envelope text-2xl text-blue-500 mr-2"></i>
+                    <div>
+                        <div class="font-weight-bold">EMAIL</div>
+                        <div>npdyachts@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2 class="h4 font-weight-bold mb-4">GỬI PHẢN HỒI</h2>
+            <p class="mb-4">Thông tin liên hệ</p>
+            <form class="form-group">
+                <div>
+                    <label class="form-label" for="name">Họ và tên</label>
+                    <input class="form-control" id="name" type="text"/>
+                </div>
+                <div>
+                    <label class="form-label" for="phone">Số điện thoại</label>
+                    <input class="form-control" id="phone" type="text"/>
+                </div>
+                <div>
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" type="email"/>
+                </div>
+                <div>
+                    <label class="form-label" for="message">Thông điệp</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <p class="text-muted">Thông tin của bạn sẽ được bảo mật và chỉ sử dụng để liên hệ.</p>
+                <button class="btn btn-primary" type="submit">Gửi đi</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row py-5">
+         <div class="col-md-6">
+          <h5>Văn phòng</h5>
+          <p> Khối 3, Phường Trung Đô, Thành Phố Vinh, Nghệ An</p>
+          <h5>Showroom</h5>
+          <p>Trường Đại Học Vinh, Đường Lê Duẩn, Phường Trường Thi, Thành Phố Vinh, Nghệ An</p>
+          <p>Tel: (+84) 123 456 789<br/>Email:  npdyacht@gmail.com</p>
+          <section class="position-relative">
+              <img alt="Ggmap" class="img-fluid" src="https://www.bing.com/maps/geoplat/REST/v1/Imagery/Map/RoadVibrant/18.670831,105.677334/14?ms=648,345&heid=7865192933866078209,707070&fpp=18.670830726623535,105.67733383178711;178&ml=Basemap,LandCover,Landmarks,OsmBuildings&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=en-US&fmt=jpeg&od=1&shading=hill&logo=n&da=ro">
+          </section>
+         </div>
+         <div class="col-md-6">
+          <h5>Đăng Ký Email nhận bản tin</h5>
+          <p>Đăng ký để trở thành người đầu tiên nhận các thông tin hấp dẫn về du thuyền, triển lãm và các buổi tiệc VIP.</p>
+          <form>
+           <div class="input-group mb-3">
+            <input aria-label="Nhập Email của bạn" class="form-control" placeholder="Nhập Email của bạn" type="email"/>
+            <button class="btn btn-dark" type="submit">Đăng ký</button>
+           </div>
+          </form>
+         </div>
+        </div>
+       </div>
+       <div class="footer">
+        <div class="container">
+         <div class="row py-3">
+          <div class="col-md-6">
+           <p>Theo dõi chúng tôi trên mạng xã hội</p>
+           <div class="social-icons">
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+           </div>
+          </div>
+          <div class="col-md-6 text-end">
+           <p>Bản Quyền Thuộc về NPD Yachts Vietnam.</p>
+           <a href="#">Trang Chủ</a>
+           <a href="#">Về Chúng tôi</a>
+           <a href="#">Liên hệ</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <a class="back-to-top" href="#"><i class="fas fa-chevron-up">
+        </i>
+       </a>
+      </body>
+      </html>
+      
